@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Pragmatica&family=Open+Sauce&display=swap');
+
+body {
+    font-family: 'Open Sauce', sans-serif;
+    color: #E8E8E8;
+    /* background-color: #191919; */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #191919;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-content img {
+    max-width: 200px;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    background-image: url('https://img.freepik.com/premium-photo/hacker-dark-background-concept_77206-26.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(0, 0, 0, 0.5); */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    padding: 50px;
+    max-width: 800px;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hero-content h1 {
+    font-family: 'Pragmatica', sans-serif;
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    color: #E8E8E8;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #191919;
+    background-color: #25F01A;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.about, .enrollment-benefits, .roadmap, .contact {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #191919;
+}
+
+.about h2, .enrollment-benefits h2, .roadmap h2, .contact h2 {
+    font-family: 'Pragmatica', sans-serif;
+    font-size: 2.5em;
+}
+
+.about p, .contact p {
+    color: #777777;
+    font-size: 1.1em;
+}
+
+.enrollment-benefits ul, .roadmap ul {
+    list-style: none;
+    padding: 0;
+}
+
+.enrollment-benefits li, .roadmap li {
+    font-size: 1.2em;
+    color: #25F01A;
+    margin: 10px 0;
+}

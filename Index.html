@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybertrek 1.0</title>
+    <style>
+        body
+         {
+            background-color: black;
+            color: #E8E8E8;
+            font-family: 'Pragmatica', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: black;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .head {
+            background-image: url(./Images/First_Background.png);
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            width: 98.9vw;
+        }
+
+        h1 {
+            text-align: start;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            font-size: 4.5em;
+            margin: 75px;
+            font-weight: lighter;
+        }
+
+        p {
+            text-align: start;
+            font-size: 1.4em;
+            line-height: 1.6;
+            color: #E8E8E8;
+            width: 75%;
+            margin: 75px;
+        }
+
+        .cybertrek-logo {
+            width: 100%;
+            height: 165px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .logo1{
+            width: 400px;
+        }
+
+        .play-button {
+            width:120px ;
+            height:50px;
+            padding-top: 58px;
+            padding-right: 20px;
+        }
+
+        .price {
+            height: 600px;
+            display: flex;
+            justify-content: space-between;
+            background-color: #191919;
+        }
+
+        .price h2 {
+            font-size: 3rem;
+            margin-left: 10%;
+            margin-top: 5%;
+            font-weight: lighter;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .price p {
+            width: 300px;
+            margin-right: 7%;
+            font-size: 20px;
+            text-align: start;
+            color: #777777;
+        }
+
+        .price img {
+            margin: 100px 0;
+        }
+
+        .about {
+            background-image: url(./Images/Background_Bitcops.png);
+            background-size: cover;
+            background-position: center;
+            width: 98.9vw;
+            height: 100vh;
+        }
+
+        .about h2 {
+            font-size: 3rem;
+            padding-left: 10%;
+            padding-top: 5%;
+            font-weight: lighter;
+        }
+
+        .about p {
+            font-size: 20px;
+            position: relative;
+            width: 40%;
+            top: 40%;
+            bottom: 15%;
+            left: 50%;
+            color: #8cadb9;
+        }
+
+        .benefit {
+            background-color: black;
+            height: 400px;
+        }
+
+        .benefit h2 {
+            color: #25F01A;
+            padding-left: 10%;
+            padding-top: 3%;
+            font-size: 3rem;
+            font-weight: lighter;
+        }
+
+        .roadmap {
+            background-color: black;
+        }
+
+        .roadmap h2 {
+            color: #25F01A;
+            padding-left: 10%;
+            padding-top: 5%;
+            padding-bottom: 5%;
+            font-size: 3rem;
+            font-weight: lighter;
+        }
+
+        .register {
+            padding: 80px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .register p {
+            width: 50%;
+            text-align: center;
+            color: #8cadb9;
+        }
+
+        .bn30 {
+  border: 5em;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+  -webkit-transform: translate(0);
+  transform: translate(0);
+  background-image: linear-gradient(45deg, #22ff00, #ffffff);
+  padding: 0.7em 2em;
+  border-radius: 65px;
+  box-shadow: 1px 1px 10px rgba(0, 255, 34, 0.438);
+  -webkit-transition: box-shadow 0.25s;
+  transition: box-shadow 0.25s;
+  color: white;
+}
+
+.bn30 .text {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(45deg, #00ff04, #00ff1a);
+}
+
+.bn30:after {
+  content: "";
+  border-radius: 18px;
+  position: absolute;
+  margin: 4px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background: #0e0e10;
+}
+
+.bn30:hover {
+  background-image: linear-gradient(-45deg, #00fc19, #00ff2f);
+  box-shadow: 0 12px 24px rgba(128, 128, 128, 0.1);
+}
+
+.bn30:hover .text {
+  background-image: linear-gradient(-45deg, #00ff1e, #00ff11);
+}
+
+        .contact {
+            background-image: url(./Images/Last_Background.png);
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            width: 98.9vw;
+        }
+
+        .contact h2 {
+            padding-left: 10%;
+            padding-top: 3%;
+            font-size: 3rem;
+            font-weight: lighter;
+            height: 10px;
+            padding-bottom: 30px;
+        }
+
+        .contact h3 {
+            padding-left: 10%;
+            padding-top: 3%;
+            font-size: 1.6rem;
+            font-weight: lighter;
+            height: 10px;
+        }
+
+        .contact p {
+            height: 1px;
+            padding-left: 8%;
+            margin: 25px;
+            font-size: 1.2em;
+        }
+
+        /* Mobile Styles */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+                margin: 20px;
+            }
+
+            p {
+                font-size: 1.2em;
+                padding: 5px;
+                width: 70%;
+                margin: 20px;
+                align-items: center;
+            }
+
+            .price {
+                flex-direction: column;
+                align-items: center;
+                height: auto;
+                padding: 20px;
+            }
+
+            .price h2 {
+                margin-left: 0;
+                text-align: center;
+                margin-top: 20px;
+            }
+
+            .price p {
+                width: 90%;
+                margin: 20px;
+                text-align: center;
+            }
+
+            .price img {
+                width: auto !important;
+                height: auto;
+                margin: 20px 0;
+            }
+
+            .about {
+                padding: 20px;
+                text-align: center;
+                text-size-adjust: 0px;
+            }
+
+            .about h2 {
+                padding-left: 0;
+                padding-top: 20px;
+            }
+
+            .about p {
+                width: 90%;
+                left: 5%;
+                top: 20%;
+                font-size: 99em;
+            }
+
+            .benefit h2,
+            .roadmap h2,
+            .contact h2,
+            .register p,
+            .contact p {
+                text-align: center;
+            }
+
+            .register p {
+                width: 90%;
+            }
+
+            .btn {
+                width: 90%;
+                font-size: 1.2em;
+                padding: 20px;
+            }
+
+            .contact h2,
+            .contact h3 {
+                padding-left: 0;
+                padding-top: 20px;
+                text-align: center;
+            }
+
+            .contact p {
+                padding-left: 0;
+                text-align: center;
+                margin: 20px;
+            }
+
+            /* Hide the notice by default */    }
+
+        @media only screen and (max-width: 480px) {
+    .logo1 {
+        padding-left: 1%;
+        display: inline-block;
+        width: 60%;
+        height: 60%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .play-button {
+        padding-right: 1%;
+        display: inline-block;
+        width: 30%;
+        height: 30%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        margin: 10px;
+    }
+
+    p {
+        font-size: 1em;
+        width: 95%;
+        margin: 10px;
+    }
+
+    .price h2,
+    .about h2,
+    .benefit h2,
+    .roadmap h2,
+    .contact h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .price p,
+    .about p,
+    .register p {
+        width: 95%;
+        font-size: 1em;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .btn {
+        width: 90%;
+        font-size: 1em;
+        padding: 15px;
+    }
+
+    .contact h2,
+    .contact h3 {
+        font-size: 1.5rem;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .contact p {
+        font-size: 1em;
+        text-align: center;
+        margin: 10px;
+    }
+
+@media only screen and (max-width: 480px) {
+    .desktop-notice {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgb(13, 255, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    text-align: center;
+    z-index: 1000;
+    display: flex;
+    }
+}
+
+}
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="head">
+            <div class="cybertrek-logo">
+                <img src="Images/Main_Logo.png" class="logo1" alt="Cybertrek Logo"  />
+                <img src="Images/Header Logo Right.png" alt="Play Button" class="play-button"  />
+            </div>
+
+            <h1>Introducing Advance <br />Cybersecurity Courses</h1>
+            <p>Cybertrek 1.0 is an advanced cybersecurity course designed to provide participants with both theoretical
+                knowledge and practical experience in the field of cybersecurity. The course aims to equip participants
+                with the skills needed to earn through bug bounty programs.</p>
+        </div>
+        <div class="price">
+            <h2>Price <br /> Compare</h2>
+            <img src="Images/Graph_Price.png" alt="graph" width="400px" height="400px">
+            <p>Unlike other platforms, our community offers advanced cybersecurity courses at a fraction of the cost. We believe in making top-tier education accessible to everyone, which is why we don't require any initial payment. Join us today and gain the skills you need to excel in your cybersecurity career without breaking the bank.</p>
+        </div>
+        <div class="video">
+            <video width="100%" height="100%" controls></video>
+        </div>
+        <div class="about">
+            <h2>About Bitcops</h2>
+            <p>I am excited to introduce BitCops, a Cyber Security community dedicated to teaching cyber-related skills to make the internet secure. We aim to expand our influence through ongoing collaboration, live sessions, and earning opportunities. Our goal is to drive the next wave of Cyber Security Experts and leaders.</p>
+        </div>
+        <div class="benefit">
+            <h2>Enrollment Benefits</h2>
+            <img src="Images/Benefits.png" alt="" width="100%">
+        </div>
+        <div class="roadmap">
+            <h2>Our Roadmap</h2>
+            <img src="Images/Roadmap.png" alt="" width="100%">
+        </div>
+        <div class="register">
+            <img src="Images/Logo_Registration_Page.png" alt="" width="25%">
+            <p>Ready to kickstart your cybersecurity career? Join our advanced courses at an Upto 45% Discount, with no Additional Tax. Enroll now and start learning today!</p>
+            <a href="https://forms.gle/mPDDJBDMFvxgrYbq9"><button class="bn30">
+                    Register Now
+                </button></a>
+        </div>
+        <div class="contact">
+            <h2>Contact Us</h2>
+            <p><strong>Mobile Number </strong>+923173895574</p>
+            <p><strong>Join </strong>linktree.com/codemoteams</p>
+            <p><strong>Email Address </strong>codemoclients@gmail.com </p>
+            <h3>Let's build the future together!</h3>
+        </div>
+    </div>
+
+    <div class="desktop-notice">
+        <p>Please open in desktop mode or laptops for the best experience.</p>
+    </div>
+
+</body>
+
+</html>
